@@ -214,6 +214,10 @@ body {
     margin-top: 30px;
 }
 
+.download-psd-button:hover {
+  transform: scale(1.1);
+}
+
 .button-image {
 	padding-left: 10px;
 }
@@ -250,6 +254,10 @@ body {
     background: 0;
     padding: 15px;
     color: #14af8f
+}
+
+.say-hello-button:hover {
+    transform: scale(1.1);
 }
 
 .ipad-about-me-image {
@@ -302,6 +310,10 @@ body {
     margin-bottom: 150px;
 }
 
+.portfolio-button:hover {
+    transform: scale(1.1);
+}
+
 .donate {
 	padding-left: 40px;
     padding-right: 40px;
@@ -323,6 +335,10 @@ body {
     background: 0;
     padding: 15px;
     color: white;
+}
+
+.donate-button:hover {
+    transform: scale(1.1);
 }
 
 .contact {
