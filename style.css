@@ -142,6 +142,7 @@ body {
 	padding-left: 30px;
     display: block;
     width: 100px;
+    padding-top: 10px;
 }
 
 .hamburger {
@@ -191,9 +192,6 @@ body {
     padding: 0;
     margin:0;
     text-align: left;
-/*    padding-top: 200px;*/
-/*    padding-bottom: 205px;*/
-/*    display: none;*/
 }
 
 .page-nav .navigation-menu li a {
@@ -236,13 +234,17 @@ body {
 .about-paragraph {
     font-size: 1.7rem;
 	line-height: 27px;
-    padding-bottom: 30px;
-    padding-right: 0px;
+/*    padding-bottom: 30px;*/
+    padding-right: 80px;
     color: #7e7e7e;
 }
 
+.about-paragraph:nth-of-type(1) {
+	padding-bottom: 30px;
+}
+
 .say-hello-button {
-	margin-top: 15px;
+	margin-top: 30px;
     margin-bottom: 70px;
     border: 3px solid #14af8f;
     background: 0;
@@ -253,9 +255,9 @@ body {
 .ipad-about-me-image {
 	text-align: right;
     float: right;
-    padding-top: 160px;
+    padding-top: 200px;
     padding-left: 10px;
-    width: 120px;
+    width: 135px;
     position: relative;
 }
 
@@ -266,11 +268,12 @@ body {
 
 .portfolio {
 	background: url(img/devices-portfolio.png) no-repeat left bottom;
-    background-size: 70%;
+    background-size: 220px;
 }
 
 .portfolio-header {
 	padding-top: 50px;
+    padding-bottom: 30px;
     padding-left: 90px;
     font-size: 3rem;
     color: #545454;
@@ -278,9 +281,9 @@ body {
 
 .portfolio-paragraph {
 	padding-left: 90px;
-    font-size: 1.5rem;
-	line-height: 30px;
-    padding-top: 47px;
+    padding-right: 20px;
+    font-size: 1.7rem;
+	line-height: 27px;
     color: #7e7e7e;
 }
 
@@ -295,7 +298,7 @@ body {
     padding: 15px;
     color: #ea4c89;
     margin-left: 90px;  
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 150px;
 }
 
@@ -315,7 +318,7 @@ body {
 }
 
 .donate-button {
-    margin-top: 43px;
+    margin-top: 30px;
     border: 3px solid white;
     background: 0;
     padding: 15px;
@@ -379,44 +382,152 @@ body {
 }
 
 @media screen and (min-width: 40em) {
+    
     .logo {
-        padding-left: 160px;
+        padding-left: 60px;
+    }
+    
+     .hamburger {
+        right: 120px;
+        top: 30px;   
     }
     
     .banner-text {
-	padding-right: 160px;
-    padding-top: 213px;
-    font-size: 6rem;
-    text-align: right;
-    color: white;
-}
+        padding-right: 60px;
+    }
 
-.banner-smalltext {
-	padding-right: 160px;
-    font-size: 3rem;
-    text-align: right;
-    color: white;
-}
+    .banner-smalltext {
+        padding-right: 60px;
+    }
+    
+    .iPhone5-header-image {
+        padding-left: 120px;
+        width: 130px;
+    }
+    
+    .download-psd-button {
+        right: 60px;
+        padding: 17px;
+    }
+    
+    .about-me {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .ipad-about-me-image {
+        padding-top: 90px;
+        width: 250px;
+    }
+    
+    .about-header {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+    
+    .about-paragraph {
+        font-size: 1.8rem;
+        line-height: 30px;
+        padding-right: 220px;
+    }
+    
+    .say-hello-button {
+        padding: 17px;
+    }
+    
+    .portfolio {
+	   background-size: 400px;
+    }
+    
+    .portfolio-header {
+        padding-left: 380px;
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+
+    .portfolio-paragraph {
+        padding-left: 380px;
+        font-size: 1.7rem;
+        line-height: 29px;
+    }
+    
+    .portfolio-button {
+        padding: 17px;
+        margin-left: 380px;  
+    }
+    
+    .donate-header {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+    
+    .donate-button {
+	   padding: 17px;
+    }
+ 
+    .social-icon {
+	   width: 50px;
+    }
 }
 
 @media screen and (min-width: 61.25em) {
     .logo {
         padding-left: 160px;
     }
+    
     .banner-text {
-	padding-right: 160px;
-    padding-top: 213px;
-    font-size: 6rem;
-    text-align: right;
-    color: white;
-}
+        padding-right: 120px;
+        font-size: 6rem;
+    }
 
-.banner-smalltext {
-	padding-right: 160px;
-    font-size: 3rem;
-    text-align: right;
-    color: white;
-}
+    .banner-smalltext {
+        padding-right: 120px;
+        font-size: 3rem;
+    }
+    
+    .iPhone5-header-image {
+        padding-left: 230px;
+        width: 170px;
+    }
+    
+    .download-psd-button {
+        right: 120px;
+        padding: 20px;
+        margin-top: 55px;
+    }
+    
+    .about-paragraph {
+        font-size: 1.9rem;
+        line-height: 30px;
+        padding-right: 390px;
+    }
+    
+    .say-hello-button {
+        margin-top: 55px;
+        padding: 20px;
+    }
+    
+    .portfolio {
+        background-size: 600px;
+    }
+    
+    .portfolio-header {
+        padding-left: 500px;
+    }
+    
+    .portfolio-paragraph {
+        padding-left: 500px;
+    }
+    
+    .portfolio-button {
+        margin-top: 55px;
+        margin-left: 500px;
+        padding: 20px;
+    }
+    
+    .donate-button {
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 64em) {
@@ -427,36 +538,23 @@ body {
     .banner-text {
         padding-right: 160px;
         padding-top: 213px;
-        font-size: 6rem;
-        text-align: right;
-        color: white;
     }
 
     .banner-smalltext {
         padding-right: 160px;
-        font-size: 3rem;
-        text-align: right;
-        color: white;
     }
     
     .iPhone5-header-image {
         padding-left: 230px;
-        display: block;
         width: 230px;
     }
     
     .download-psd-button {
-        border: 3px solid white;
         right: 160px;
-        padding: 20px;
         margin-top: 55px;
     }
     
     .hamburger {
-        border: 0;
-        background: 0;
-
-        position: absolute;   
         right: 160px;
         top: 40px;
     }
@@ -465,34 +563,8 @@ body {
         padding-bottom: 40px;
         padding-left: 45%;
     }
-
-    .navigation-menu li:last-child {
-        padding-bottom: 0px;
-    }
-
-    .page-nav .navigation-menu {
-        list-style: none;
-        padding: 0;
-        margin:0;
-        text-align: left;
-    /*    padding-top: 200px;*/
-    /*    padding-bottom: 205px;*/
-    /*    display: none;*/
-    }
-
-    .page-nav .navigation-menu li a {
-        text-decoration: none;
-        font-size: 2rem;
-        font-style: oblique;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        padding: 15px 60px;
-    }
     
     .ipad-about-me-image {
-        text-align: right;
-        float: right;
         padding-top: 150px;
         width: 340px;
     }
@@ -500,14 +572,11 @@ body {
     .about-me {
         padding-left: 160px;
         padding-right: 160px;
-        background-color: #f4f4f4;
     }
 
     .about-header {
         padding-top: 147px;
         padding-bottom: 44px;
-        font-size: 3rem;
-        color: #545454;
     }
 
     .about-paragraph {
@@ -515,27 +584,20 @@ body {
         line-height: 30px;
         padding-bottom: 30px;
         padding-right: 390px;
-        color: #7e7e7e;
     }
     
     .say-hello-button {
         margin-top: 71px;
         margin-bottom: 141px;
-        border: 3px solid #14af8f;
-        background: 0;
-        padding: 20px;
-        color: #14af8f
     }
 
     .portfolio {
-        background: url(img/devices-portfolio.png) no-repeat left bottom;
+        background-size: 700px;
     }
-
+    
     .portfolio-header {
         padding-top: 105px;
         padding-left: 705px;
-        font-size: 3rem;
-        color: #545454;
     }
 
     .portfolio-paragraph {
@@ -543,19 +605,9 @@ body {
         font-size: 1.8rem;
         line-height: 30px;
         padding-top: 47px;
-        color: #7e7e7e;
-    }
-
-    .devices-portfolio {
-        padding-left: 0;
-        display: block;
     }
 
     .portfolio-button {
-        border: 3px solid #ea4c89;
-        background: 0;
-        padding: 20px;
-        color: #ea4c89;
         margin-left: 705px;  
         margin-top: 65px;
         margin-bottom: 200px;
@@ -564,42 +616,25 @@ body {
     .donate {
         padding-left: 160px;
         padding-right: 160px;
-        text-align: center;
-        background: #13c3ad;
         padding-bottom: 97px;
     }
 
     .donate-header {
         padding-top: 100px;
-        text-align: center;
-        color: white;
         font-size: 3rem;
     }
 
     .donate-button {
         margin-top: 43px;
-        border: 3px solid white;
-        background: 0;
-        padding: 20px;
-        color: white;
-    }
-    
-    contact {
-        background: #f4f4f4;
     }
 
     .contact-icons {
         padding-top: 242px;
         padding-bottom: 66px;
-        text-align: center;
     }
 
     .social-icon {
         padding-left: 35px;
         width: 56px;
-    }
-
-    .social-icon:first-child {
-        padding-left: 0;
     }
 }
