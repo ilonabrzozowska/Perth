@@ -229,13 +229,13 @@ body {
 .about-header {
 	padding-top: 50px;
     padding-bottom: 30px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #545454;
 }
 
 .about-paragraph {
-    font-size: 1.8rem;
-	line-height: 28px;
+    font-size: 1.7rem;
+	line-height: 27px;
     padding-bottom: 30px;
     padding-right: 0px;
     color: #7e7e7e;
@@ -253,9 +253,10 @@ body {
 .ipad-about-me-image {
 	text-align: right;
     float: right;
-    padding-top: 150px;
+    padding-top: 115px;
     padding-left: 10px;
     width: 120px;
+    position: relative;
 }
 
 .line {
