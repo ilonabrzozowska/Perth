@@ -160,18 +160,22 @@ body {
 
 .nav-home a {
 	background: url(img/nav-icon-home.png) no-repeat 0px 0px;
+    background-size: 45px;
 }
 
 .nav-about a {
     background: url(img/nav-icon-about.png) no-repeat 0px 0px;
+    background-size: 45px;
 }
 
 .nav-contact a {
     background: url(img/nav-icon-contact.png) no-repeat 0px 0px;
+    background-size: 45px;
 }
 
 .nav-portfolio a {
     background: url(img/nav-icon-portfolio.png) no-repeat 0px 0px;	
+    background-size: 45px;
 }
 
 .navigation-menu {
@@ -180,7 +184,7 @@ body {
 
 .navigation-menu li {
     padding-bottom: 43px;
-    padding-left: 36%;
+    padding-left: 26%;
 }
 
 .navigation-menu li:last-child {
@@ -196,7 +200,7 @@ body {
 
 .page-nav .navigation-menu li a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: oblique;
     font-weight: bold;
     color: white;
@@ -424,6 +428,31 @@ body {
     .download-psd-button {
         right: 60px;
         padding: 17px;
+    }
+    
+    .nav-home a {
+        background-size: 50px;
+    }
+
+    .nav-about a {
+        background-size: 50px;
+    }
+
+    .nav-contact a {
+        background-size: 50px;
+    }
+
+    .nav-portfolio a {
+        background-size: 50px;
+    }
+    
+    .navigation-menu li {
+        padding-left: 36%;
+    }
+
+    .page-nav .navigation-menu li a {
+        font-size: 1.8rem;
+        padding: 15px 60px;
     }
     
     .about-me {
