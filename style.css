@@ -270,6 +270,10 @@ body {
 	background: #f4f4f4;
 }
 
+.contact-header {
+	display: none;
+}
+
 .contact-icons {
 	padding-top: 90px;
     padding-bottom: 66px;
