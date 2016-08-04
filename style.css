@@ -19,7 +19,7 @@ body {
 }
 @font-face {
     font-family: Montserrat-Hairline;
-    src: url("Montserrat-Hairlaine.otf");
+    src: url("Montserrat-Hairline.otf");
 }
 
 .page-header {
@@ -37,6 +37,7 @@ body {
 
 .logo {
     padding-left: 20px;
+    height: 80px;
 }
 
 .banner-text {
@@ -55,8 +56,8 @@ body {
 }
 
 .banner-smalltext span {
-    font: 700 1.1em / 25px Montserrat-Hairline;
     font-style: italic;
+    font-weight: 700;
 }
 
 .iPhone5-header-image {
@@ -101,33 +102,30 @@ body {
 
 .navigation-menu {
     display: none;
+}
+
+.navigation-menu.nav-open {
+    display: flex;
+	flex-direction: column;
     position: absolute;
+    list-style: none;
+    left: calc(50% - 50px);
+    top: 15%;
 }
 
 .navigation-menu li {
-    padding-bottom: 43px;
-    padding-left: 26%;
+    padding-bottom: 30px;
 }
 
 .navigation-menu li:last-child {
 	padding-bottom: 0px;
 }
 
-.page-nav .navigation-menu {
-    list-style: none;
-    padding: 0;
-    margin:0;
-    text-align: left;
-}
-
-.page-nav .navigation-menu li a {
+.navigation-menu li a {
     text-decoration: none;
-    font-size: 1.6rem;
-    font-style: oblique;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 15px 60px;
+    font: 700 1em / 25px Montserrat-Hairline;
+    color: #ffffff;
+    padding: 15px 0px 15px 60px;
 }
 
 .download-psd-button {
@@ -327,6 +325,7 @@ body {
     
     .logo {
         padding-left: 60px;
+        height: 115px;
     }
     
      .hamburger {
@@ -347,10 +346,6 @@ body {
         line-height: 25px;
     }
     
-    .banner-smalltext span {
-	   font-size: 1.2em;
-    }
-    
     .iPhone5-header-image {
         padding-left: 120px;
         width: 130px;
@@ -360,6 +355,7 @@ body {
     .download-psd-button {
         right: 60px;
         padding: 17px;
+        width: 173px;
     }
     
     .nav-home a {
@@ -378,13 +374,17 @@ body {
         background-size: 50px;
     }
     
+    .navigation-menu.nav-open {
+        top: 30%;
+    }
+    
     .navigation-menu li {
-        padding-left: 36%;
+        padding-bottom: 40px;
     }
 
     .page-nav .navigation-menu li a {
         font-size: 1.8rem;
-        padding: 15px 60px;
+        padding: 16px 0 16px 60px;
     }
     
     .about-me {
@@ -459,14 +459,20 @@ body {
     
     .banner-text {
         padding-right: 120px;
-        font-size: 6rem;
         padding-top: 70px;
     }
 
     .banner-smalltext {
         padding-right: 120px;
-        font-size: 3rem;
         padding-top: 20px;
+    }
+    
+    .page-nav .navigation-menu li a {
+        padding: 20px 0 20px 60px;
+    }
+    
+    .navigation-menu.nav-open {
+        top: 40%;
     }
     
     .iPhone5-header-image {
@@ -477,8 +483,8 @@ body {
     
     .download-psd-button {
         right: 120px;
-        padding: 20px;
-        margin-top: 55px;
+        padding: 17px;
+        margin-top: 52px;
     }
     
     .about-paragraph {
@@ -519,8 +525,6 @@ body {
     
     .page-header {
 	   height: 651px;
-/*            background: #61c0e7 url("img/iphone5-header.png") no-repeat 230px 385px;*/
-
     }
     
     .logo {
@@ -528,27 +532,26 @@ body {
     }
     
     .banner-text {
-        padding-right: 160px;
-        padding-top: 70px;
-        letter-spacing: 3px;
-        word-spacing: 2px;
+        padding-right: 154px;
+        padding-top: 74px;
+        font: 400 70px / 25px BlackJackRegular;
     }
 
     .banner-smalltext {
         padding-right: 160px;
-        padding-top: 70px;
-        font: 300 35px / 25px Montserrat-Hairline;
+        padding-top: 62px;
+        font: 300 32px / 25px Montserrat-Hairline;
     }
     
     .iPhone5-header-image {
         padding-left: 230px;
         width: 230px;
-        padding-top: 73px;
+        padding-top: 77px;
     }
     
     .download-psd-button {
         right: 160px;
-        margin-top: 55px;
+        margin-top: 52px;
     }
     
     .hamburger {
@@ -556,9 +559,12 @@ body {
         top: 40px;
     }
     
+    .navigation-menu.nav-open {
+        top: 50%;
+    }
+    
     .navigation-menu li {
         padding-bottom: 40px;
-        padding-left: 550px;
     }
     
     .ipad-about-me-image {

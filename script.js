@@ -3,12 +3,12 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
         if($(this).hasClass('open'))
         {
-            $('.navigation-menu').css('display', 'block');
+            $('.navigation-menu').addClass('nav-open');
             $('.page-header, .logo, .banner, .iPhone5-header-image').addClass('opac');
         }
         else
         {
-            $('.navigation-menu').css('display', 'none');
+            $('.navigation-menu').removeClass('nav-open');
             $('.page-header, .logo, .banner, .iPhone5-header-image').removeClass('opac');
         }
 	});
