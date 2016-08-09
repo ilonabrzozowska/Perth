@@ -1,0 +1,566 @@
+.hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 50%;
+  background: white;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+.hamburger span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 5px 5px 0; }
+
+.hamburger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 5px 0 0 5px; }
+
+.hamburger span:nth-child(1), .hamburger span:nth-child(2) {
+  top: 0px; }
+
+.hamburger span:nth-child(3), .hamburger span:nth-child(4) {
+  top: 10px; }
+
+.hamburger span:nth-child(5), .hamburger span:nth-child(6) {
+  top: 20px; }
+
+.hamburger.open span:nth-child(1), .hamburger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.hamburger.open span:nth-child(2), .hamburger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.hamburger.open span:nth-child(1) {
+  left: 3px;
+  top: 5px; }
+
+.hamburger.open span:nth-child(2) {
+  left: calc(50% - 3px);
+  top: 5px; }
+
+.hamburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0; }
+
+.hamburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0; }
+
+.hamburger.open span:nth-child(5) {
+  left: 3px;
+  top: 15px; }
+
+.hamburger.open span:nth-child(6) {
+  left: calc(50% - 3px);
+  top: 15px; }
+
+html {
+  font-size: 62.5%; }
+
+h1, h2, h3, h4, p, table, li, ul, img {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem; }
+
+/****************************** FONTS ************************************/
+@font-face {
+  font-family: BlackJackRegular;
+  src: url("/fonts/blackjack.otf"); }
+
+@font-face {
+  font-family: Montserrat-Hairline;
+  src: url("/fonts/Montserrat-Hairline.otf"); }
+
+/****************************** HEADER ************************************/
+.page-header {
+  background-color: #61c0e7; }
+
+.page-header.opac {
+  background: #e57f85;
+  opacity: 1; }
+
+.opac {
+  opacity: 0.1; }
+
+.logo {
+  padding-left: 20px;
+  height: 80px; }
+
+.banner-text {
+  padding-right: 30px;
+  padding-top: 40px;
+  text-align: right;
+  color: white;
+  font: 400 3em/25px BlackJackRegular; }
+
+.banner-smalltext {
+  padding-right: 30px;
+  text-align: right;
+  color: white;
+  font: 300 1em/25px Montserrat-Hairline; }
+
+.banner-smalltext span {
+  font-style: italic;
+  font-weight: 700; }
+
+.iPhone5-header-image {
+  padding-left: 30px;
+  display: block;
+  width: 100px;
+  padding-top: 10px; }
+
+.hamburger {
+  border: 0;
+  background: 0;
+  position: absolute;
+  right: 30px;
+  top: 20px; }
+
+.hamburger-close {
+  display: none; }
+
+.nav-home a {
+  background: url(/img/nav-icon-home.png) no-repeat 0px 0px;
+  background-size: 45px; }
+
+.nav-about a {
+  background: url(/img/nav-icon-about.png) no-repeat 0px 0px;
+  background-size: 45px; }
+
+.nav-contact a {
+  background: url(/img/nav-icon-contact.png) no-repeat 0px 0px;
+  background-size: 45px; }
+
+.nav-portfolio a {
+  background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;
+  background-size: 45px; }
+
+.navigation-menu {
+  display: none; }
+
+.navigation-menu.nav-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  left: calc(50% - 50px);
+  top: 15%; }
+
+.navigation-menu li {
+  padding-bottom: 30px; }
+
+.navigation-menu li:last-child {
+  padding-bottom: 0px; }
+
+.navigation-menu li a {
+  text-decoration: none;
+  font: 700 1em/25px Montserrat-Hairline;
+  color: #ffffff;
+  padding: 15px 0px 15px 60px; }
+
+.download-psd-button {
+  border: 3px solid white;
+  position: absolute;
+  right: 30px;
+  color: white;
+  margin-top: 30px; }
+
+.button-image {
+  padding-left: 10px; }
+
+.button {
+  font: 400 11px/25px Montserrat-Hairline;
+  background: 0;
+  padding: 10px; }
+
+.button:hover {
+  transform: scale(1.1); }
+
+/****************************** ABOUT ME ************************************/
+.about-me {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f4f4f4; }
+
+.about-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #545454;
+  font: 300 40px/25px Montserrat-Hairline; }
+
+.about-paragraph {
+  padding-right: 80px;
+  color: #7e7e7e;
+  font: 400 16px/25px Montserrat-Hairline; }
+
+.about-paragraph:nth-of-type(1) {
+  padding-bottom: 18px; }
+
+.about-paragraph:nth-of-type(2) {
+  border-left: 6px solid #4eacdd;
+  padding-left: 20px;
+  padding-bottom: 0;
+  font-style: italic; }
+
+.say-hello-button {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  border: 3px solid #14af8f;
+  color: #14af8f; }
+
+.ipad-about-me-image {
+  text-align: right;
+  float: right;
+  padding-top: 200px;
+  padding-left: 10px;
+  width: 135px;
+  position: relative; }
+
+/****************************** PORTFOLIO ************************************/
+.portfolio {
+  background: url(img/devices-portfolio.png) no-repeat left bottom;
+  background-size: 220px; }
+
+.portfolio-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 90px;
+  font-size: 3rem;
+  color: #545454;
+  font: 300 40px/25px Montserrat-Hairline; }
+
+.portfolio-paragraph {
+  padding-left: 90px;
+  padding-right: 20px;
+  font-size: 1.7rem;
+  line-height: 27px;
+  color: #7e7e7e;
+  font: 400 16px/25px Montserrat-Hairline; }
+
+.devices-portfolio {
+  padding-left: 0;
+  display: block; }
+
+.portfolio-button {
+  border: 3px solid #ea4c89;
+  color: #ea4c89;
+  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 150px; }
+
+/****************************** DONATE ************************************/
+.donate {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  background: #13c3ad;
+  padding-bottom: 60px; }
+
+.donate-header {
+  padding-top: 50px;
+  text-align: center;
+  color: #ffffff;
+  font: 400 40px/25px Montserrat-Hairline; }
+
+.donate-button {
+  margin-top: 30px;
+  border: 3px solid white;
+  color: white; }
+
+/****************************** CONTACT ************************************/
+.contact {
+  background: #f4f4f4; }
+
+.contact-header {
+  display: none; }
+
+.contact-icons {
+  padding-top: 90px;
+  padding-bottom: 66px;
+  display: flex;
+  justify-content: center; }
+
+.social-icon {
+  padding-left: 35px;
+  width: 40px; }
+
+.social-icon:first-child {
+  padding-left: 0; }
+
+.newsletter {
+  padding-bottom: 240px;
+  text-align: center; }
+
+.newsletter-label {
+  font: 600 16px/25px Montserrat-Hairline;
+  font-style: italic; }
+
+.newsletter-input {
+  margin-left: 18px;
+  padding: 14px 25px;
+  background: url(img/mail-icon-2.png) no-repeat right 15px center;
+  background-color: white;
+  border: 0;
+  border-radius: 10px; }
+
+/****************************** FOOTER ************************************/
+.footer-text {
+  padding-top: 44px;
+  padding-bottom: 40px;
+  font-style: italic;
+  text-align: center;
+  font: 400 12px/25px Montserrat-Hairline; }
+
+.span-year {
+  font-style: normal; }
+
+.span-perth {
+  font-style: normal;
+  color: #6dc5ea; }
+
+/******************************************************************* 40em *************************************/
+@media screen and (min-width: 40em) {
+  /****************************** HEADER ************************************/
+  .logo {
+    padding-left: 60px;
+    height: 115px; }
+  .hamburger {
+    right: 120px;
+    top: 30px; }
+  .banner-text {
+    padding-right: 60px;
+    padding-top: 50px;
+    font-size: 4em; }
+  .banner-smalltext {
+    padding-right: 60px;
+    padding-top: 20px;
+    font-size: 1.5em;
+    line-height: 25px; }
+  .iPhone5-header-image {
+    padding-left: 120px;
+    width: 130px;
+    padding-top: 58px; }
+  .download-psd-button {
+    right: 60px;
+    width: 173px; }
+  .button {
+    padding: 12px;
+    font-size: 13px; }
+  .nav-home a {
+    background-size: 50px; }
+  .nav-about a {
+    background-size: 50px; }
+  .nav-contact a {
+    background-size: 50px; }
+  .nav-portfolio a {
+    background-size: 50px; }
+  .navigation-menu.nav-open {
+    top: 30%; }
+  .navigation-menu li {
+    padding-bottom: 40px; }
+  .page-nav .navigation-menu li a {
+    font-size: 1.8rem; }
+  /****************************** ABOUT ME ************************************/
+  .about-me {
+    padding-left: 70px;
+    padding-right: 70px; }
+  .ipad-about-me-image {
+    padding-top: 90px;
+    width: 250px; }
+  .about-header {
+    padding-top: 70px;
+    padding-bottom: 35px; }
+  .about-paragraph {
+    font-size: 1.8rem;
+    line-height: 30px;
+    padding-right: 220px; }
+  /****************************** PORTFOLIO ************************************/
+  .portfolio {
+    background-size: 400px; }
+  .portfolio-header {
+    padding-left: 380px;
+    padding-top: 70px;
+    padding-bottom: 35px; }
+  .portfolio-paragraph {
+    padding-left: 380px;
+    font-size: 1.7rem;
+    line-height: 29px; }
+  .portfolio-button {
+    margin-left: 380px; }
+  /****************************** DONATE ************************************/
+  .donate-header {
+    padding-top: 70px;
+    padding-bottom: 35px; }
+  .social-icon {
+    width: 50px; } }
+
+/******************************************************************* 61.25em *************************************/
+@media screen and (min-width: 61.25em) {
+  /****************************** HEADER ************************************/
+  .page-header {
+    height: 500px; }
+  .logo {
+    padding-left: 160px; }
+  .banner-text {
+    padding-right: 120px;
+    padding-top: 70px; }
+  .banner-smalltext {
+    padding-right: 120px;
+    padding-top: 20px; }
+  .navigation-menu.nav-open {
+    top: 40%; }
+  .iPhone5-header-image {
+    padding-left: 230px;
+    width: 170px;
+    padding-top: 42px; }
+  .download-psd-button {
+    right: 120px;
+    margin-top: 52px; }
+  .button {
+    padding: 13px;
+    font-size: 15px; }
+  /****************************** ABOUT ME ************************************/
+  .about-paragraph {
+    font-size: 1.9rem;
+    line-height: 30px;
+    padding-right: 390px; }
+  .say-hello-button {
+    margin-top: 55px; }
+  /****************************** PORTFOLIO ************************************/
+  .portfolio {
+    background-size: 600px; }
+  .portfolio-header {
+    padding-left: 500px; }
+  .portfolio-paragraph {
+    padding-left: 500px; }
+  .portfolio-button {
+    margin-top: 55px;
+    margin-left: 500px;
+    width: 224px; }
+  /****************************** DONATE ************************************/
+  .donate-button {
+    width: 224px; } }
+
+/******************************************************************* 64em *************************************/
+@media screen and (min-width: 64em) {
+  /****************************** HEADER ************************************/
+  .page-header {
+    height: 651px; }
+  .logo {
+    padding-left: 160px; }
+  .banner-text {
+    padding-right: 154px;
+    padding-top: 74px;
+    font: 400 70px/25px BlackJackRegular; }
+  .banner-smalltext {
+    padding-right: 160px;
+    padding-top: 62px;
+    font: 300 32px/25px Montserrat-Hairline; }
+  .iPhone5-header-image {
+    padding-left: 230px;
+    width: 230px;
+    padding-top: 77px; }
+  .download-psd-button {
+    right: 160px;
+    margin-top: 59px; }
+  .hamburger {
+    right: 160px;
+    top: 40px; }
+  .navigation-menu.nav-open {
+    top: 50%; }
+  .navigation-menu li {
+    padding-bottom: 40px; }
+  .ipad-about-me-image {
+    padding-top: 150px;
+    width: 340px; }
+  /****************************** ABOUT ME ************************************/
+  .about-me {
+    padding-left: 160px;
+    padding-right: 160px; }
+  .about-header {
+    padding-top: 147px;
+    padding-bottom: 40px; }
+  .about-paragraph {
+    padding-bottom: 30px;
+    padding-right: 365px;
+    font: 400 16px/25px Montserrat-Hairline; }
+  .about-paragraph:nth-of-type(1) {
+    padding-bottom: 18px; }
+  .say-hello-button {
+    margin-top: 71px;
+    margin-bottom: 141px;
+    width: 175px; }
+  /****************************** PORTFOLIO ************************************/
+  .portfolio {
+    background-size: 758px;
+    height: 650px; }
+  .portfolio-header {
+    padding-top: 104px;
+    padding-left: 705px;
+    padding-bottom: 44px; }
+  .portfolio-paragraph {
+    padding-left: 705px;
+    font: 400 16px/25px Montserrat-Hairline; }
+  .portfolio-paragraph:first-of-type {
+    padding-bottom: 25px; }
+  .portfolio-paragraph span {
+    color: #474e5d;
+    font: 600 16px/25px Montserrat-Hairline;
+    font-style: italic; }
+  .portfolio-button {
+    margin-left: 705px;
+    margin-top: 57px;
+    margin-bottom: 200px; }
+  /****************************** DONATE ************************************/
+  .donate {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 97px; }
+  .donate-header {
+    padding-top: 100px; }
+  .donate-button {
+    margin-top: 10px; }
+  /****************************** CONTACT ************************************/
+  .contact-icons {
+    padding-top: 243px;
+    padding-bottom: 68px; }
+  .social-icon {
+    padding-left: 35px;
+    width: 56px; }
+  .newsletter-label {
+    font: 600 16px/25px Montserrat-Hairline;
+    font-style: italic; } }
+
+/*# sourceMappingURL=style.css.map */
