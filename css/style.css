@@ -107,16 +107,22 @@ body {
   padding: 40px 30px 0 0;
   text-align: right;
   color: #ffffff;
-  font: 400 3em/25px BlackJackRegular; }
+  font-weight: 400;
+  font-size: 48px;
+  font-family: BlackJackRegular;
+  line-height: 25px; }
 
 .banner-smalltext {
   padding-right: 30px;
   text-align: right;
   color: #ffffff;
-  font: 300 1em/25px Montserrat-Hairline; }
-  .banner-smalltext .banner-smalltext span font {
-    style: italic;
-    weight: 700; }
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
+  .banner-smalltext span {
+    font-style: italic;
+    font-weight: 700; }
 
 .iPhone5-header-image {
   padding: 10px 0 0 30px;
@@ -149,24 +155,28 @@ body {
   background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;
   background-size: 45px; }
 
-.navigation-menu {
-  display: none; }
-  .navigation-menu.nav-open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    list-style: none;
-    left: calc(50% - 50px);
-    top: 15%; }
-  .navigation-menu li {
-    padding-bottom: 30px; }
-    .navigation-menu li:last-child {
-      padding-bottom: 0px; }
-    .navigation-menu li a {
-      text-decoration: none;
-      font: 700 1em/25px Montserrat-Hairline;
-      color: #ffffff;
-      padding: 15px 0px 15px 60px; }
+.page-nav {
+  display: flex;
+  justify-content: center; }
+  .page-nav .navigation-menu {
+    display: none; }
+    .page-nav .navigation-menu.nav-open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      list-style: none; }
+    .page-nav .navigation-menu li {
+      padding-bottom: 30px; }
+      .page-nav .navigation-menu li:last-child {
+        padding-bottom: 0px; }
+      .page-nav .navigation-menu li a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        font-family: Montserrat-Hairline;
+        line-height: 25px;
+        color: #ffffff;
+        padding: 15px 0px 15px 60px; }
 
 .download-psd-button {
   border: 3px solid #ffffff;
@@ -179,7 +189,10 @@ body {
   padding-left: 10px; }
 
 .button {
-  font: 400 11px/25px Montserrat-Hairline;
+  font-weight: 300;
+  font-size: 11px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px;
   background: 0;
   padding: 10px; }
   .button:hover {
@@ -193,17 +206,24 @@ body {
 .about-header {
   padding: 50px 0 30px 0;
   color: #545454;
-  font: 300 30px/25px Montserrat-Hairline; }
+  font-weight: 300;
+  font-size: 30px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
 
 .about-paragraph {
   padding-right: 80px;
   color: #7e7e7e;
-  font: 400 14px/25px Montserrat-Hairline; }
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
   .about-paragraph:nth-of-type(1) {
     padding-bottom: 18px; }
   .about-paragraph:nth-of-type(2) {
     border-left: 6px solid #4eacdd;
     padding-left: 20px;
+    padding-bottom: 0;
     font-style: italic; }
 
 .say-hello-button {
@@ -228,14 +248,23 @@ body {
   padding: 50px 0 30px 90px;
   font-size: 3em;
   color: #545454;
-  font: 300 40px/25px Montserrat-Hairline; }
+  font-weight: 300;
+  font-size: 30px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
 
 .portfolio-paragraph {
   padding: 0 20px 0 90px;
   font-size: 1.7em;
   line-height: 27px;
   color: #7e7e7e;
-  font: 400 16px/25px Montserrat-Hairline; }
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
+  .portfolio-paragraph span {
+    font-weight: 600;
+    font-style: italic; }
 
 .devices-portfolio {
   padding-left: 0;
@@ -256,7 +285,10 @@ body {
   padding-top: 50px;
   text-align: center;
   color: #ffffff;
-  font: 400 40px/25px Montserrat-Hairline; }
+  font-weight: 300;
+  font-size: 30px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
 
 .donate-button {
   margin-top: 30px;
@@ -287,14 +319,16 @@ body {
   text-align: center; }
 
 .newsletter-label {
-  font: 600 16px/25px Montserrat-Hairline;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px;
   font-style: italic; }
 
 .newsletter-input {
   margin-left: 18px;
   padding: 14px 25px;
-  background: url(/img/mail-icon-2.png) no-repeat right 15px center;
-  background-color: #ffffff;
+  background: #ffffff url(/img/mail-icon-2.png) no-repeat right 15px center;
   border: 0;
   border-radius: 10px; }
 
@@ -303,7 +337,10 @@ body {
   padding: 44px 0 40px 0;
   font-style: italic;
   text-align: center;
-  font: 400 12px/25px Montserrat-Hairline; }
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat-Hairline;
+  line-height: 25px; }
 
 .span-year {
   font-style: normal; }
@@ -326,8 +363,7 @@ body {
     font-size: 4em; }
   .banner-smalltext {
     padding: 20px 60px 0 0;
-    font-size: 1.5em;
-    line-height: 25px; }
+    font-size: 24px; }
   .iPhone5-header-image {
     width: 130px;
     padding: 58px 0 0 120px; }
@@ -345,12 +381,11 @@ body {
     background-size: 50px; }
   .nav-portfolio a {
     background-size: 50px; }
-  .navigation-menu.nav-open {
-    top: 30%; }
   .navigation-menu li {
     padding-bottom: 40px; }
     .navigation-menu li a {
-      font-size: 1.8em; }
+      font-size: 16px;
+      padding: 17px 0 17px 60px; }
   /****************************** ABOUT ME ************************************/
   .about-me {
     padding: 0 70px; }
@@ -360,7 +395,7 @@ body {
   .about-header {
     padding: 70px 0 35px 0; }
   .about-paragraph {
-    font: 400 16px/25px Montserrat-Hairline;
+    font-size: 16px;
     padding-right: 220px; }
   /****************************** PORTFOLIO ************************************/
   .portfolio {
@@ -368,9 +403,8 @@ body {
   .portfolio-header {
     padding: 70px 0 35px 380px; }
   .portfolio-paragraph {
-    padding-left: 380px;
-    font-size: 1.7em;
-    line-height: 29px; }
+    font-size: 16px;
+    padding-left: 380px; }
   .portfolio-button {
     margin-left: 380px; }
   /****************************** DONATE ************************************/
@@ -391,11 +425,9 @@ body {
     padding: 70px 120px 0 0; }
   .banner-smalltext {
     padding: 20px 120px 0 0; }
-  .navigation-menu.nav-open {
-    top: 40%; }
   .iPhone5-header-image {
     width: 170px;
-    padding: 42px 0 0 230px; }
+    padding: 43px 0 0 230px; }
   .download-psd-button {
     right: 120px;
     margin-top: 52px; }
@@ -415,7 +447,7 @@ body {
   .portfolio-paragraph {
     padding-left: 500px; }
   .portfolio-button {
-    margin: 55px 0 0 500px;
+    margin: 55px 0 150px 500px;
     width: 224px; }
   /****************************** DONATE ************************************/
   .donate-button {
@@ -430,21 +462,19 @@ body {
     padding-left: 160px; }
   .banner-text {
     padding: 74px 154px 0 0;
-    font: 400 70px/25px BlackJackRegular; }
+    font-size: 70px; }
   .banner-smalltext {
     padding: 62px 160px 0 0;
-    font: 300 32px/25px Montserrat-Hairline; }
+    font-size: 32px; }
   .iPhone5-header-image {
     width: 230px;
-    padding: 77px 0 0 230px; }
+    padding: 78px 0 0 230px; }
   .download-psd-button {
     right: 160px;
     margin-top: 59px; }
   .hamburger {
     right: 160px;
     top: 40px; }
-  .navigation-menu.nav-open {
-    top: 50%; }
   .navigation-menu li {
     padding-bottom: 40px; }
   .ipad-about-me-image {
@@ -456,8 +486,10 @@ body {
   .about-header {
     padding: 147px 0 40px 0; }
   .about-paragraph {
-    padding: 0 365px 30px 0;
-    font: 400 16px/25px Montserrat-Hairline; }
+    padding: 0 365px 30px 0; }
+    .about-paragraph font {
+      size: 16px;
+      weight: 400; }
     .about-paragraph:nth-of-type(1) {
       padding-bottom: 18px; }
   .say-hello-button {
@@ -470,13 +502,16 @@ body {
   .portfolio-header {
     padding: 104px 0 44px 705px; }
   .portfolio-paragraph {
-    padding-left: 705px;
-    font: 400 16px/25px Montserrat-Hairline; }
+    padding-left: 705px; }
+    .portfolio-paragraph font {
+      size: 16px;
+      weight: 400; }
     .portfolio-paragraph:first-of-type {
       padding-bottom: 25px; }
-    .portfolio-paragraph span {
-      font: 600 16px/25px Montserrat-Hairline;
-      font-style: italic; }
+    .portfolio-paragraph span font {
+      size: 16px;
+      weight: 600;
+      style: italic; }
   .portfolio-button {
     margin: 57px 0 200px 705px; }
   /****************************** DONATE ************************************/
@@ -494,7 +529,6 @@ body {
     width: 56px;
     height: 56px; }
   .newsletter-label {
-    font: 600 16px/25px Montserrat-Hairline;
-    font-style: italic; } }
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

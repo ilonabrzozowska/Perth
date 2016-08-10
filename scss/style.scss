@@ -1,5 +1,6 @@
 @import "hamburger";
 @import "colors";
+@import "base";
 
 html {
     font-size: 62.5%;
@@ -52,18 +53,18 @@ body {
     padding: 40px 30px 0 0;
     text-align: right;
     color: $main-header-color;
-    font: 400 3em / 25px BlackJackRegular;
+    @include baseBannerFont;
 }
 
 .banner-smalltext {
 	padding-right: 30px;
     text-align: right;
     color: $main-header-color;
-    font: 300 1em / 25px Montserrat-Hairline;
-    .banner-smalltext span {
-        font {
+    @include baseLightFont;
+    span {
+        font: {
             style: italic;
-            weight: 700;
+            weight: $fontWeightBold + 100;
         }
     }
 }
@@ -106,28 +107,30 @@ body {
     background-size: 45px;
 }
 
-.navigation-menu {
-    display: none;
-    &.nav-open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        list-style: none;
-        left: calc(50% - 50px);
-        top: 15%;
+.page-nav {
+	display: flex;
+    justify-content: center;
+    .navigation-menu {
+        display: none;    
+        &.nav-open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            list-style: none;
+        }
+        li {
+            padding-bottom: 30px;
+            &:last-child {
+               padding-bottom: 0px;
+            }
+            a {
+                text-decoration: none;
+                @include baseLightFont;
+                color: $main-header-color;
+                padding: 15px 0px 15px 60px;
+            }
+        }   
     }
-    li {
-        padding-bottom: 30px;
-        &:last-child {
-	       padding-bottom: 0px;
-        }
-        a {
-            text-decoration: none;
-            font: 700 1em / 25px Montserrat-Hairline;
-            color: $main-header-color;
-            padding: 15px 0px 15px 60px;
-        }
-    }   
 }
 
 .download-psd-button {
@@ -143,7 +146,7 @@ body {
 }
 
 .button {
-    font: 400 11px / 25px Montserrat-Hairline;
+    @include baseButtonFont;
     background: 0;
     padding: 10px;
     &:hover {
@@ -161,19 +164,20 @@ body {
 .about-header {
     padding: 50px 0 30px 0;
     color: $sec-header-color;
-    font: 300 30px / 25px Montserrat-Hairline;
+    @include baseHeaderFont;
 }
 
 .about-paragraph {
     padding-right: 80px;
     color: $main-paragraph-color;
-    font: 400 14px / 25px Montserrat-Hairline;
+    @include baseRegularFont;
     &:nth-of-type(1) {
 	   padding-bottom: 18px;
     }
     &:nth-of-type(2) {
         border-left: 6px solid $about-border-color;
         padding-left: 20px;
+        padding-bottom: 0;
         font-style: italic;
     }
 }
@@ -204,7 +208,7 @@ body {
     padding: 50px 0 30px 90px;
     font-size: 3em;
     color: $sec-header-color;
-    font: 300 40px / 25px Montserrat-Hairline;
+    @include baseHeaderFont;
 }
 
 .portfolio-paragraph {
@@ -212,7 +216,13 @@ body {
     font-size: 1.7em;
 	line-height: 27px;
     color: $main-paragraph-color;
-    font: 400 16px / 25px Montserrat-Hairline;
+    @include baseRegularFont;
+    span {
+        font: {
+            weight: $fontWeightBold;
+            style: italic;
+        } 
+    }
 }
 
 .devices-portfolio {
@@ -238,7 +248,7 @@ body {
 	padding-top: 50px;
     text-align: center;
     color: $main-header-color;
-    font: 400 40px / 25px Montserrat-Hairline;
+    @include baseHeaderFont;
 }
 
 .donate-button {
@@ -278,15 +288,14 @@ body {
 }
 
 .newsletter-label {
-    font: 600 16px / 25px Montserrat-Hairline;
+    @include baseBoldFont;
     font-style: italic;
 }
 
 .newsletter-input {
     margin-left: 18px;
     padding: 14px 25px;
-    background: url(/img/mail-icon-2.png) no-repeat right 15px center;
-    background-color: $main-header-color;
+    background: $main-header-color url(/img/mail-icon-2.png) no-repeat right 15px center;
     border: 0;
     border-radius: 10px;    
 }
@@ -297,7 +306,7 @@ body {
     padding: 44px 0 40px 0;
     font-style: italic;
     text-align: center;
-    font: 400 12px / 25px Montserrat-Hairline;
+    @include baseRegularFont;
 }
 
 .span-year {
@@ -333,8 +342,7 @@ body {
 
     .banner-smalltext {
         padding: 20px 60px 0 0;
-        font-size: 1.5em;
-        line-height: 25px;
+        font-size: $baseFontSize + 10;
     }
     
     .iPhone5-header-image {
@@ -369,13 +377,11 @@ body {
     }
     
     .navigation-menu {
-        &.nav-open {
-            top: 30%;
-        }
         li {
             padding-bottom: 40px;
             a {
-                font-size: 1.8em;
+                font-size: $baseFontSize + 2;
+                padding: 17px 0 17px 60px;
             }
         }
     }
@@ -397,7 +403,7 @@ body {
     }
     
     .about-paragraph {
-        font: 400 16px / 25px Montserrat-Hairline;
+        font-size: $baseFontSize + 2;
         padding-right: 220px;
     }
     
@@ -412,9 +418,8 @@ body {
     }
 
     .portfolio-paragraph {
+        font-size: $baseFontSize + 2;
         padding-left: 380px;
-        font-size: 1.7em;
-        line-height: 29px;
     }
     
     .portfolio-button {
@@ -441,7 +446,7 @@ body {
     
     .page-header {
 	   height: 500px;
-}
+    }
     
     .logo {
         padding-left: 160px;
@@ -454,14 +459,10 @@ body {
     .banner-smalltext {
         padding: 20px 120px 0 0;
     }
-
-    .navigation-menu.nav-open {
-        top: 40%;
-    }
     
     .iPhone5-header-image {
         width: 170px;
-        padding: 42px 0 0 230px;
+        padding: 43px 0 0 230px;
     }
     
     .download-psd-button {
@@ -471,7 +472,7 @@ body {
     
     .button {
         padding: 13px;
-        font-size: 15px;
+        font-size: $baseFontSize + 1;
     }
     
 /****************************** ABOUT ME ************************************/
@@ -499,7 +500,7 @@ body {
     }
     
     .portfolio-button {
-        margin: 55px 0 0 500px;
+        margin: 55px 0 150px 500px;
         width: 224px;
     }
 
@@ -526,17 +527,17 @@ body {
     
     .banner-text {
         padding: 74px 154px 0 0;
-        font: 400 70px / 25px BlackJackRegular;
+        font-size: $baseBannerFontSize + 22;
     }
 
     .banner-smalltext {
         padding: 62px 160px 0 0;
-        font: 300 32px / 25px Montserrat-Hairline;
+        font-size: $baseFontSize + 18;
     }
     
     .iPhone5-header-image {
         width: 230px;
-        padding: 77px 0 0 230px;
+        padding: 78px 0 0 230px;
     }
     
     .download-psd-button {
@@ -550,9 +551,6 @@ body {
     }
     
     .navigation-menu {
-        &.nav-open {
-            top: 50%;
-        }
         li {
             padding-bottom: 40px;
         }
@@ -575,7 +573,10 @@ body {
 
     .about-paragraph {
         padding: 0 365px 30px 0;
-        font: 400 16px / 25px Montserrat-Hairline;
+        font {
+            size: $baseFontSize + 2;
+            weight: $fontWeightRegular;
+        }
         &:nth-of-type(1) {
             padding-bottom: 18px;
         }
@@ -599,13 +600,19 @@ body {
 
     .portfolio-paragraph {
         padding-left: 705px;
-        font: 400 16px / 25px Montserrat-Hairline;
+        font {
+            size: $baseFontSize + 2;
+            weight: $fontWeightRegular;
+        } 
         &:first-of-type {
             padding-bottom: 25px;
         }
         span {
-            font: 600 16px / 25px Montserrat-Hairline;
-            font-style: italic;
+            font {
+                size: $baseFontSize + 2;
+                weight: $fontWeightBold;
+                style: italic;
+            } 
         }
     }
 
@@ -640,7 +647,6 @@ body {
     }
     
     .newsletter-label {
-        font: 600 16px / 25px Montserrat-Hairline;
-        font-style: italic;
+        font-size: $baseFontSize + 2;         
     }
 }
