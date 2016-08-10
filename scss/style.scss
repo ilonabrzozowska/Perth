@@ -32,12 +32,11 @@ body {
 
 .page-header {
 	background-color: #61c0e7;
+    &.opac {
+        background: #e57f85;
+        opacity: 1;
+    }  
 }
-
-.page-header.opac {
-    background: #e57f85;
-    opacity: 1;
-}  
 
 .opac {
 	opacity: 0.1;
@@ -61,11 +60,10 @@ body {
     text-align: right;
     color: white;
     font: 300 1em / 25px Montserrat-Hairline;
-}
-
-.banner-smalltext span {
-    font-style: italic;
-    font-weight: 700;
+    .banner-smalltext span {
+        font-style: italic;
+        font-weight: 700;
+    }
 }
 
 .iPhone5-header-image {
@@ -110,30 +108,26 @@ body {
 
 .navigation-menu {
     display: none;
-}
-
-.navigation-menu.nav-open {
-    display: flex;
-	flex-direction: column;
-    position: absolute;
-    list-style: none;
-    left: calc(50% - 50px);
-    top: 15%;
-}
-
-.navigation-menu li {
-    padding-bottom: 30px;
-}
-
-.navigation-menu li:last-child {
-	padding-bottom: 0px;
-}
-
-.navigation-menu li a {
-    text-decoration: none;
-    font: 700 1em / 25px Montserrat-Hairline;
-    color: #ffffff;
-    padding: 15px 0px 15px 60px;
+    &.nav-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        left: calc(50% - 50px);
+        top: 15%;
+    }
+    li {
+        padding-bottom: 30px;
+        &:last-child {
+	       padding-bottom: 0px;
+        }
+        a {
+            text-decoration: none;
+            font: 700 1em / 25px Montserrat-Hairline;
+            color: #ffffff;
+            padding: 15px 0px 15px 60px;
+        }
+    }   
 }
 
 .download-psd-button {
@@ -152,10 +146,9 @@ body {
     font: 400 11px / 25px Montserrat-Hairline;
     background: 0;
     padding: 10px;
-}
-
-.button:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 /****************************** ABOUT ME ************************************/
@@ -177,17 +170,15 @@ body {
     padding-right: 80px;
     color: #7e7e7e;
     font: 400 16px / 25px Montserrat-Hairline;
-}
-
-.about-paragraph:nth-of-type(1) {
-	padding-bottom: 18px;
-}
-
-.about-paragraph:nth-of-type(2) {
-    border-left: 6px solid #4eacdd;
-    padding-left: 20px;
-    padding-bottom: 0;
-    font-style: italic;
+    &:nth-of-type(1) {
+	   padding-bottom: 18px;
+    }
+    &:nth-of-type(2) {
+        border-left: 6px solid #4eacdd;
+        padding-left: 20px;
+        padding-bottom: 0;
+        font-style: italic;
+    }
 }
 
 .say-hello-button {
@@ -287,10 +278,10 @@ body {
 .social-icon {
 	padding-left: 35px;
     width: 40px;
-}
-
-.social-icon:first-child {
-	padding-left: 0;
+    height: 40px;
+    &:first-child {
+	   padding-left: 0;
+    }
 }
 
 .newsletter {
@@ -393,16 +384,16 @@ body {
         background-size: 50px;
     }
     
-    .navigation-menu.nav-open {
-        top: 30%;
-    }
-    
-    .navigation-menu li {
-        padding-bottom: 40px;
-    }
-
-    .page-nav .navigation-menu li a {
-        font-size: 1.8rem;
+    .navigation-menu {
+        &.nav-open {
+            top: 30%;
+        }
+        li {
+            padding-bottom: 40px;
+            a {
+                font-size: 1.8rem;
+            }
+        }
     }
     
 /****************************** ABOUT ME ************************************/
@@ -460,6 +451,7 @@ body {
  
     .social-icon {
 	   width: 50px;
+        height: 50px;
     }
 }
 
@@ -588,12 +580,13 @@ body {
         top: 40px;
     }
     
-    .navigation-menu.nav-open {
-        top: 50%;
-    }
-    
-    .navigation-menu li {
-        padding-bottom: 40px;
+    .navigation-menu {
+        &.nav-open {
+            top: 50%;
+        }
+        li {
+            padding-bottom: 40px;
+        }
     }
     
     .ipad-about-me-image {
@@ -617,10 +610,9 @@ body {
         padding-bottom: 30px;
         padding-right: 365px;
         font: 400 16px / 25px Montserrat-Hairline;
-    }
-    
-    .about-paragraph:nth-of-type(1) {
-        padding-bottom: 18px;
+        &:nth-of-type(1) {
+            padding-bottom: 18px;
+        }
     }
     
     .say-hello-button {
@@ -645,16 +637,14 @@ body {
     .portfolio-paragraph {
         padding-left: 705px;
         font: 400 16px / 25px Montserrat-Hairline;
-    }
-    
-    .portfolio-paragraph:first-of-type {
-        padding-bottom: 25px;
-    }
-    
-    .portfolio-paragraph span {
-        color: #474e5d;
-        font: 600 16px / 25px Montserrat-Hairline;
-        font-style: italic;
+        &:first-of-type {
+            padding-bottom: 25px;
+        }
+        span {
+            color: #474e5d;
+            font: 600 16px / 25px Montserrat-Hairline;
+            font-style: italic;
+        }
     }
 
     .portfolio-button {
@@ -689,6 +679,7 @@ body {
     .social-icon {
         padding-left: 35px;
         width: 56px;
+        height: 56px;
     }
     
     .newsletter-label {
