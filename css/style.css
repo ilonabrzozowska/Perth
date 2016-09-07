@@ -140,19 +140,19 @@ body {
   display: none; }
 
 .nav-home a {
-  background: url(img/nav-icon-home.png) no-repeat 0px 0px;
+  background: url(/img/nav-icon-home.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-about a {
-  background: url(img/nav-icon-about.png) no-repeat 0px 0px;
+  background: url(/img/nav-icon-about.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-contact a {
-  background: url(img/nav-icon-contact.png) no-repeat 0px 0px;
+  background: url(/img/nav-icon-contact.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-portfolio a {
-  background: url(img/nav-icon-portfolio.png) no-repeat 0px 0px;
+  background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .page-nav {
@@ -241,7 +241,7 @@ body {
 
 /****************************** PORTFOLIO ************************************/
 .portfolio {
-  background: url(img/devices-portfolio.png) no-repeat left bottom;
+  background: url(/img/devices-portfolio.png) no-repeat left bottom;
   background-size: 220px; }
 
 .portfolio-header {
@@ -328,7 +328,7 @@ body {
 .newsletter-input {
   margin-left: 18px;
   padding: 14px 25px;
-  background: #ffffff url(img/mail-icon-2.png) no-repeat right 15px center;
+  background: #ffffff url(/img/mail-icon-2.png) no-repeat right 15px center;
   border: 0;
   border-radius: 10px; }
 
