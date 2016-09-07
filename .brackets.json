@@ -10,7 +10,8 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "beautify.io.on_save": false
         }
     }
 }
