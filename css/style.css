@@ -245,7 +245,7 @@ body {
 
 /****************************** PORTFOLIO ************************************/
 .portfolio {
-  background: url(../img/devices-portfolio.png) no-repeat left bottom;
+  background: url(/img/devices-portfolio.png) no-repeat left bottom;
   background-size: 220px; }
 
 .portfolio-header {
