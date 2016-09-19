@@ -1,62 +1,66 @@
 $baseFontSize: 14px;
 $baseBannerFontSize: 48px;
-
 $fontWeightLight: 300;
 $fontWeightRegular: 400;
 $fontWeightBold: 600;
-
 $baseLineHeight: 25px;
-
 @mixin baseLightFont {
     font: {
         weight: $fontWeightLight;
-        size: $baseFontSize;  
-        family: Montserrat-Hairline;
+        size: $baseFontSize;
+        family: Montserrat;
     }
     line-height: $baseLineHeight;
-};
+}
 
+;
 @mixin baseRegularFont {
     font: {
         weight: $fontWeightRegular;
-        size: $baseFontSize;  
-        family: Montserrat-Hairline;
+        size: $baseFontSize;
+        family: Montserrat;
     }
     line-height: $baseLineHeight;
-};
+}
 
+;
 @mixin baseBoldFont {
     font: {
         weight: $fontWeightBold;
-        size: $baseFontSize;  
-        family: Montserrat-Hairline;
+        size: $baseFontSize;
+        family: Montserrat;
     }
     line-height: $baseLineHeight;
-};
+}
 
+;
 @mixin baseHeaderFont {
     font: {
         weight: $fontWeightLight;
-        size: $baseFontSize + 16px;  
-        family: Montserrat-Hairline;
+        size: $baseFontSize + 16px;
+        family: Montserrat;
     }
     line-height: $baseLineHeight;
-};
+}
 
+;
 @mixin baseButtonFont {
     font: {
         weight: $fontWeightLight;
-        size: $baseFontSize - 3px;  
-        family: Montserrat-Hairline;
+        size: $baseFontSize - 3px;
+        family: Montserrat;
     }
     line-height: $baseLineHeight;
-};
+}
 
+;
 @mixin baseBannerFont {
     font: {
         weight: $fontWeightRegular;
-        size: $baseBannerFontSize;  
+        size: $baseBannerFontSize;
         family: BlackJackRegular;
     }
     line-height: $baseLineHeight;
-};
+}
+
+;

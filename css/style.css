@@ -71,7 +71,15 @@
 html {
   font-size: 62.5%; }
 
-h1, h2, h3, h4, p, table, li, ul, img {
+h1,
+h2,
+h3,
+h4,
+p,
+table,
+li,
+ul,
+img {
   margin: 0;
   padding: 0; }
 
@@ -83,11 +91,7 @@ body {
 /****************************** FONTS ************************************/
 @font-face {
   font-family: BlackJackRegular;
-  src: url("/fonts/blackjack.otf"); }
-
-@font-face {
-  font-family: Montserrat-Hairline;
-  src: url("/fonts/Montserrat-Hairline.otf"); }
+  src: url("/fonts/blackjack.otf") format("opentype"); }
 
 /****************************** HEADER ************************************/
 .page-header {
@@ -118,7 +122,7 @@ body {
   color: #ffffff;
   font-weight: 300;
   font-size: 14px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
   .banner-smalltext span {
     font-style: italic;
@@ -173,7 +177,7 @@ body {
         text-decoration: none;
         font-weight: 300;
         font-size: 14px;
-        font-family: Montserrat-Hairline;
+        font-family: Montserrat;
         line-height: 25px;
         color: #ffffff;
         padding: 15px 0px 15px 60px; }
@@ -191,7 +195,7 @@ body {
 .button {
   font-weight: 300;
   font-size: 11px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px;
   background: 0;
   padding: 10px; }
@@ -208,7 +212,7 @@ body {
   color: #545454;
   font-weight: 300;
   font-size: 30px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
 
 .about-paragraph {
@@ -216,7 +220,7 @@ body {
   color: #7e7e7e;
   font-weight: 400;
   font-size: 14px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
   .about-paragraph:nth-of-type(1) {
     padding-bottom: 18px; }
@@ -250,7 +254,7 @@ body {
   color: #545454;
   font-weight: 300;
   font-size: 30px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
 
 .portfolio-paragraph {
@@ -260,7 +264,7 @@ body {
   color: #7e7e7e;
   font-weight: 400;
   font-size: 14px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
   .portfolio-paragraph span {
     font-weight: 600;
@@ -287,7 +291,7 @@ body {
   color: #ffffff;
   font-weight: 300;
   font-size: 30px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
 
 .donate-button {
@@ -321,7 +325,7 @@ body {
 .newsletter-label {
   font-weight: 600;
   font-size: 14px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px;
   font-style: italic; }
 
@@ -339,7 +343,7 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 14px;
-  font-family: Montserrat-Hairline;
+  font-family: Montserrat;
   line-height: 25px; }
 
 .span-year {

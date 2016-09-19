@@ -1,12 +1,19 @@
 @import "hamburger";
 @import "colors";
 @import "base";
-
 html {
     font-size: 62.5%;
 }
 
-h1, h2, h3, h4, p, table, li, ul, img {
+h1,
+h2,
+h3,
+h4,
+p,
+table,
+li,
+ul,
+img {
     margin: 0;
     padding: 0;
 }
@@ -17,31 +24,27 @@ body {
     font-size: 1.4em;
 }
 
+
 /****************************** FONTS ************************************/
 
 @font-face {
     font-family: BlackJackRegular;
-    src: url("/fonts/blackjack.otf");
-}
-
-@font-face {
-    font-family: Montserrat-Hairline;
-    src: url("/fonts/Montserrat-Hairline.otf");
+    src: url("/fonts/blackjack.otf") format("opentype");
 }
 
 
 /****************************** HEADER ************************************/
 
 .page-header {
-	background-color: $header-bac-color;
+    background-color: $header-bac-color;
     &.opac {
         background: $header-nav-color;
         opacity: 1;
-    }  
+    }
 }
 
 .opac {
-	opacity: 0.1;
+    opacity: 0.1;
 }
 
 .logo {
@@ -57,7 +60,7 @@ body {
 }
 
 .banner-smalltext {
-	padding-right: 30px;
+    padding-right: 30px;
     text-align: right;
     color: $main-header-color;
     @include baseLightFont;
@@ -78,17 +81,17 @@ body {
 .hamburger {
     border: 0;
     background: 0;
-    position: absolute;   
+    position: absolute;
     right: 30px;
     top: 20px;
 }
 
 .hamburger-close {
-	display: none;
+    display: none;
 }
 
 .nav-home a {
-	background: url(/img/nav-icon-home.png) no-repeat 0px 0px;
+    background: url(/img/nav-icon-home.png) no-repeat 0px 0px;
     background-size: 45px;
 }
 
@@ -103,15 +106,15 @@ body {
 }
 
 .nav-portfolio a {
-    background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;	
+    background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;
     background-size: 45px;
 }
 
 .page-nav {
-	display: flex;
+    display: flex;
     justify-content: center;
     .navigation-menu {
-        display: none;    
+        display: none;
         &.nav-open {
             display: flex;
             flex-direction: column;
@@ -121,7 +124,7 @@ body {
         li {
             padding-bottom: 30px;
             &:last-child {
-               padding-bottom: 0px;
+                padding-bottom: 0px;
             }
             a {
                 text-decoration: none;
@@ -129,20 +132,20 @@ body {
                 color: $main-header-color;
                 padding: 15px 0px 15px 60px;
             }
-        }   
+        }
     }
 }
 
 .download-psd-button {
     border: 3px solid $main-header-color;
     position: absolute;
-	right: 30px;
+    right: 30px;
     color: $main-header-color;
     margin-top: 30px;
 }
 
 .button-image {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
 .button {
@@ -153,6 +156,7 @@ body {
         transform: scale(1.1);
     }
 }
+
 
 /****************************** ABOUT ME ************************************/
 
@@ -172,7 +176,7 @@ body {
     color: $main-paragraph-color;
     @include baseRegularFont;
     &:nth-of-type(1) {
-	   padding-bottom: 18px;
+        padding-bottom: 18px;
     }
     &:nth-of-type(2) {
         border-left: 6px solid $about-border-color;
@@ -189,7 +193,7 @@ body {
 }
 
 .ipad-about-me-image {
-	text-align: right;
+    text-align: right;
     float: right;
     padding: 200px 0 0 10px;
     width: 105px;
@@ -197,10 +201,11 @@ body {
     right: 0;
 }
 
+
 /****************************** PORTFOLIO ************************************/
 
 .portfolio {
-	background: url(/img/devices-portfolio.png) no-repeat left bottom;
+    background: url(/img/devices-portfolio.png) no-repeat left bottom;
     background-size: 220px;
 }
 
@@ -214,27 +219,28 @@ body {
 .portfolio-paragraph {
     padding: 0 20px 0 90px;
     font-size: 1.7em;
-	line-height: 27px;
+    line-height: 27px;
     color: $main-paragraph-color;
     @include baseRegularFont;
     span {
         font: {
             weight: $fontWeightBold;
             style: italic;
-        } 
+        }
     }
 }
 
 .devices-portfolio {
-	padding-left: 0;
+    padding-left: 0;
     display: block;
 }
 
 .portfolio-button {
-	border: 3px solid $portfolio-button-color;
+    border: 3px solid $portfolio-button-color;
     color: $portfolio-button-color;
     margin: 30px 0 150px 90px;
 }
+
 
 /****************************** DONATE ************************************/
 
@@ -245,7 +251,7 @@ body {
 }
 
 .donate-header {
-	padding-top: 50px;
+    padding-top: 50px;
     text-align: center;
     color: $main-header-color;
     @include baseHeaderFont;
@@ -257,14 +263,15 @@ body {
     color: $main-header-color;
 }
 
+
 /****************************** CONTACT ************************************/
 
 .contact {
-	background: $main-bac-color;
+    background: $main-bac-color;
 }
 
 .contact-header {
-	display: none;
+    display: none;
 }
 
 .contact-icons {
@@ -274,11 +281,11 @@ body {
 }
 
 .social-icon {
-	padding-left: 35px;
+    padding-left: 35px;
     width: 40px;
     height: 40px;
     &:first-child {
-	   padding-left: 0;
+        padding-left: 0;
     }
 }
 
@@ -297,8 +304,9 @@ body {
     padding: 14px 25px;
     background: $main-header-color url(/img/mail-icon-2.png) no-repeat right 15px center;
     border: 0;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
+
 
 /****************************** FOOTER ************************************/
 
@@ -310,72 +318,59 @@ body {
 }
 
 .span-year {
-	font-style: normal;
+    font-style: normal;
 }
 
 .span-perth {
     font-style: normal;
-	color: $footer-span-color;
+    color: $footer-span-color;
 }
+
 
 /******************************************************************* 40em *************************************/
 
 @media screen and (min-width: 40em) {
-    
-    
-/****************************** HEADER ************************************/
-
+    /****************************** HEADER ************************************/
     .logo {
         padding-left: 60px;
         height: 115px;
     }
-    
-     .hamburger {
+    .hamburger {
         right: 120px;
-        top: 30px;   
+        top: 30px;
     }
-    
     .banner-text {
         padding: 50px 60px 0 0;
         font-size: 4em;
     }
-
     .banner-smalltext {
         padding: 20px 60px 0 0;
         font-size: $baseFontSize + 10;
     }
-    
     .iPhone5-header-image {
         width: 130px;
         padding: 58px 0 0 120px;
     }
-    
     .download-psd-button {
         right: 60px;
         width: 173px;
     }
-    
     .button {
         padding: 12px;
         font-size: 13px;
     }
-  
     .nav-home a {
         background-size: 50px;
     }
-
     .nav-about a {
         background-size: 50px;
     }
-
     .nav-contact a {
         background-size: 50px;
     }
-
     .nav-portfolio a {
         background-size: 50px;
     }
-    
     .navigation-menu {
         li {
             padding-bottom: 40px;
@@ -385,192 +380,148 @@ body {
             }
         }
     }
-    
-/****************************** ABOUT ME ************************************/
-
-    
+    /****************************** ABOUT ME ************************************/
     .about-me {
         padding: 0 70px;
     }
-    
     .ipad-about-me-image {
         padding-top: 90px;
         width: 250px;
     }
-    
     .about-header {
         padding: 70px 0 35px 0;
     }
-    
     .about-paragraph {
         font-size: $baseFontSize + 2;
         padding-right: 220px;
     }
-    
-/****************************** PORTFOLIO ************************************/
-    
+    /****************************** PORTFOLIO ************************************/
     .portfolio {
-	   background-size: 400px;
+        background-size: 400px;
     }
-    
     .portfolio-header {
         padding: 70px 0 35px 380px;
     }
-
     .portfolio-paragraph {
         font-size: $baseFontSize + 2;
         padding-left: 380px;
     }
-    
     .portfolio-button {
-        margin-left: 380px;  
+        margin-left: 380px;
     }
-    
-/****************************** DONATE ************************************/
-    
+    /****************************** DONATE ************************************/
     .donate-header {
         padding: 70px 0 35px 0;
     }
- 
     .social-icon {
         width: 50px;
         height: 50px;
     }
 }
 
+
 /******************************************************************* 61.25em *************************************/
 
 @media screen and (min-width: 61.25em) {
-    
-/****************************** HEADER ************************************/
-    
+    /****************************** HEADER ************************************/
     .page-header {
-	   height: 500px;
+        height: 500px;
     }
-    
     .logo {
         padding-left: 160px;
     }
-    
     .banner-text {
         padding: 70px 120px 0 0;
     }
-
     .banner-smalltext {
         padding: 20px 120px 0 0;
     }
-    
     .iPhone5-header-image {
         width: 170px;
         padding: 43px 0 0 230px;
     }
-    
     .download-psd-button {
         right: 120px;
         margin-top: 52px;
     }
-    
     .button {
         padding: 13px;
         font-size: $baseFontSize + 1;
     }
-    
-/****************************** ABOUT ME ************************************/
-    
+    /****************************** ABOUT ME ************************************/
     .about-paragraph {
         padding-right: 390px;
     }
-    
     .say-hello-button {
         margin-top: 55px;
     }
- 
-/****************************** PORTFOLIO ************************************/
-    
+    /****************************** PORTFOLIO ************************************/
     .portfolio {
         background-size: 600px;
     }
-    
     .portfolio-header {
         padding-left: 500px;
     }
-    
     .portfolio-paragraph {
         padding-left: 500px;
     }
-    
     .portfolio-button {
         margin: 55px 0 150px 500px;
         width: 224px;
     }
-
-/****************************** DONATE ************************************/
-    
+    /****************************** DONATE ************************************/
     .donate-button {
         width: 224px;
     }
 }
 
+
 /******************************************************************* 64em *************************************/
 
 @media screen and (min-width: 64em) {
-
-/****************************** HEADER ************************************/
-    
+    /****************************** HEADER ************************************/
     .page-header {
-	   height: 651px;
+        height: 651px;
     }
-    
     .logo {
         padding-left: 160px;
     }
-    
     .banner-text {
         padding: 74px 154px 0 0;
         font-size: $baseBannerFontSize + 22;
     }
-
     .banner-smalltext {
         padding: 62px 160px 0 0;
         font-size: $baseFontSize + 18;
     }
-    
     .iPhone5-header-image {
         width: 230px;
         padding: 78px 0 0 230px;
     }
-    
     .download-psd-button {
         right: 160px;
         margin-top: 59px;
     }
-    
     .hamburger {
         right: 160px;
         top: 40px;
     }
-    
     .navigation-menu {
         li {
             padding-bottom: 40px;
         }
     }
-    
     .ipad-about-me-image {
         padding-top: 150px;
         width: 340px;
     }
- 
-/****************************** ABOUT ME ************************************/
-    
+    /****************************** ABOUT ME ************************************/
     .about-me {
         padding: 0 160px;
     }
-
     .about-header {
         padding: 147px 0 40px 0;
     }
-
     .about-paragraph {
         padding: 0 365px 30px 0;
         font {
@@ -581,29 +532,24 @@ body {
             padding-bottom: 18px;
         }
     }
-    
     .say-hello-button {
         margin: 71px 0 141px 0;
         width: 175px;
     }
-
-/****************************** PORTFOLIO ************************************/
-    
+    /****************************** PORTFOLIO ************************************/
     .portfolio {
         background-size: 758px;
         height: 650px;
     }
-    
     .portfolio-header {
         padding: 104px 0 44px 705px;
     }
-
     .portfolio-paragraph {
         padding-left: 705px;
         font {
             size: $baseFontSize + 2;
             weight: $fontWeightRegular;
-        } 
+        }
         &:first-of-type {
             padding-bottom: 25px;
         }
@@ -612,41 +558,32 @@ body {
                 size: $baseFontSize + 2;
                 weight: $fontWeightBold;
                 style: italic;
-            } 
+            }
         }
     }
-
     .portfolio-button {
         margin: 57px 0 200px 705px;
     }
-
-/****************************** DONATE ************************************/
-    
+    /****************************** DONATE ************************************/
     .donate {
         padding: 0 160px 97px 160px;
     }
-
     .donate-header {
         padding-top: 100px;
     }
-
     .donate-button {
         margin-top: 10px;
     }
-
-/****************************** CONTACT ************************************/
-    
+    /****************************** CONTACT ************************************/
     .contact-icons {
         padding: 243px 0 68px 0;
     }
-
     .social-icon {
         padding-left: 35px;
         width: 56px;
         height: 56px;
     }
-    
     .newsletter-label {
-        font-size: $baseFontSize + 2;         
+        font-size: $baseFontSize + 2;
     }
 }
