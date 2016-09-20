@@ -91,7 +91,7 @@ body {
 /****************************** FONTS ************************************/
 @font-face {
   font-family: BlackJackRegular;
-  src: url("/fonts/blackjack.otf") format("opentype"); }
+  src: url("/Perth/fonts/blackjack.otf") format("opentype"); }
 
 /****************************** HEADER ************************************/
 .page-header {
@@ -144,19 +144,19 @@ body {
   display: none; }
 
 .nav-home a {
-  background: url(/img/nav-icon-home.png) no-repeat 0px 0px;
+  background: url(/Perth/img/nav-icon-home.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-about a {
-  background: url(/img/nav-icon-about.png) no-repeat 0px 0px;
+  background: url(/Perth/img/nav-icon-about.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-contact a {
-  background: url(/img/nav-icon-contact.png) no-repeat 0px 0px;
+  background: url(/Perth/img/nav-icon-contact.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .nav-portfolio a {
-  background: url(/img/nav-icon-portfolio.png) no-repeat 0px 0px;
+  background: url(/Perth/img/nav-icon-portfolio.png) no-repeat 0px 0px;
   background-size: 45px; }
 
 .page-nav {
@@ -332,7 +332,7 @@ body {
 .newsletter-input {
   margin-left: 18px;
   padding: 14px 25px;
-  background: #ffffff url(/img/mail-icon-2.png) no-repeat right 15px center;
+  background: #ffffff url(/Perth/img/mail-icon-2.png) no-repeat right 15px center;
   border: 0;
   border-radius: 10px; }
 
